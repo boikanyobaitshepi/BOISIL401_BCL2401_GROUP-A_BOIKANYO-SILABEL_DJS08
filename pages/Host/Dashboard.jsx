@@ -15,7 +15,7 @@ export default function Dashboard() {
             .finally(() => setLoading(false))
     }, [])
 
-   // function renderVanElements(vans) {
+    function renderVanElements(vans) {
         const hostVansEls = vans.map((van) => (
             <div className="host-van-single" key={van.id}>
                 <img src={van.imageUrl} alt={`Photo of ${van.name}`} />
